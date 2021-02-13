@@ -53,7 +53,7 @@ namespace randstr
             char[] randomChars = new char[randomSringLen];
             for (int charIt = 0; charIt < randomSringLen; charIt++)
             {
-                int randCharInPool = random.Next(charPool.Length-1);
+                int randCharInPool = random.Next(charPool.Length);
                 randomChars[charIt] = charPool[randCharInPool];
             }
             return randomChars;
